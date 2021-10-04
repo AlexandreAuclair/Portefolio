@@ -1,0 +1,74 @@
+.profil{
+
+
+
+
+    background-color: $grey2;
+    .un{
+        background-image: url("../../img/Rectangle\ 3.png");
+        background-repeat: no-repeat;
+    }
+    .deux{
+        background-image: url("../../img/Rectangle\ 5.png");
+        background-repeat: no-repeat;
+    }
+    .trois{
+        background-image: url("../../img/Rectangle\ 4.png");
+        background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column-reverse;
+    align-content: center;
+    justify-content: center;
+    padding: 30% 10% 10% 10%;
+    font-size: rem(24);
+    ul{
+        font-weight: 200;
+    }
+
+    }
+    img{
+        width: 50%;
+        height: 50%;
+        margin: auto;
+    }
+
+
+}
+
+
+@media screen and (min-width: $vw-large) {
+
+    .profil{
+        .trois{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 4%;
+        }
+
+        .text{
+
+            width: 900px;
+            margin: auto;
+            span{
+                font-size: rem(100);
+                padding: 5px;
+            }
+            p{
+                margin: 10px;
+                font-size: rem(48);
+            }
+            ul{
+                margin: 100px;
+                li{
+                    font-size: rem(36);
+                }
+            }
+        }
+        img{
+            width: 527px;
+            height: 527px;
+            margin: 200px;
+        }
+    }
+}

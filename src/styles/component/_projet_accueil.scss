@@ -1,0 +1,164 @@
+.projets{
+    background-color: $dark;
+    padding: 5%;
+    width: 100%;
+
+    section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        a{
+            background-color: $orange;
+            padding: 0.5% 2% 0.5% 2%;
+            color: $black;
+            text-decoration: none;
+            transition-duration: 1000ms;
+        }
+        a:hover{
+            color: $whiteGrey;
+        }
+
+        article{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            img{
+                padding: 15%;
+                transition-duration: 800ms;
+                transition-property: display;
+                transition-timing-function: ease-out;
+            }
+            .chaos:hover + .projetSingle{
+                display: block;
+            }
+            .event:hover + .projetSingle2{
+                display: block;
+            }
+            .projetSingle:hover{
+                display: block;
+            }
+            .projetSingle2:hover{
+                display: block;
+            }
+
+            .projetSingle{
+                display: none;
+                background-color: $grey;
+                padding: 1%;
+                position: absolute;
+                top:7%;
+                left: 10%;
+                z-index:1;
+                margin: 0;
+
+                .console{
+                    background-color: #D1D1D1;
+                    width: 340px;
+                    border: $whiteGrey 7px solid;
+                    border-radius: 10px;
+                    margin: 0;
+                    height: 404px;
+                    .content{
+                        
+                    background-color: $grey;
+                    position: relative;
+                    bottom: -20px;
+                    height: 95%;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    padding: 10px;
+                    text-align: center;
+                    a{
+                        color: $whiteGrey;
+                        width: 200px;
+                        border: solid 2px $orange;
+                        background-color: $grey;
+                    }
+                    a:hover{
+                        background-color: $orange;
+                    }
+                    h4{
+                        font-family: $electronize;
+                        margin: 1%;
+                    }
+                    }
+                    
+                }
+            }
+            .projetSingle2{
+                display: none;
+                background-color: $grey;
+                padding: 1%;
+                position: absolute;
+                top:57%;
+                right: 25%;
+                z-index:1;
+                margin: 0;
+                
+                .console{
+                    background-color: #D1D1D1;
+                    width: 340px;
+                    border: $whiteGrey 7px solid;
+                    border-radius: 10px;
+                    margin: 0;
+                    height: 404px;
+                    .content{
+                        
+                    background-color: $grey;
+                    position: relative;
+                    bottom: -20px;
+                    height: 95%;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    padding: 10px;
+                    text-align: center;
+                    a{
+                        color: $whiteGrey;
+                        width: 200px;
+                        border: solid 2px $orange;
+                        background-color: $grey;
+                    }
+                    a:hover{
+                        background-color: $orange;
+                    }
+                    h4{
+                        font-family: $electronize;
+                        margin: 1%;
+                    }
+                    }
+                    
+                }
+            }
+        }
+    }
+
+
+}
+
+@media screen and (min-width: $vw-large) {
+
+    .projets{
+        section{
+            article{
+                flex-wrap: nowrap;
+                .projetSingle{
+                    top: 20%;
+                    left: -20%;
+                }
+                .projetSingle2{
+                    top: 20%;
+                    right: 0;
+                }
+            }
+        }
+    }
+}

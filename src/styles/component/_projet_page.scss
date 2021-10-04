@@ -1,0 +1,354 @@
+.projet{
+    section{
+
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        a{
+            background-color: $orange;
+            padding: 0.5% 2% 0.5% 2%;
+            color: $black;
+            text-decoration: none;
+            transition-duration: 500ms;
+        }
+        a:hover{
+            color: $whiteGrey;
+        }
+        article{
+             padding: 10%;
+        }
+        .seperate{
+            border: #D1D1D1 7px solid;
+            width: 100%;
+            height: 5px;
+            margin: 5%;
+            border-radius: 10px;
+        }
+        article{
+            display: flex;
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+.chaos{
+background-color: $dark;
+img{
+    width: 80%;
+    height: 80%;
+
+}
+
+
+.console{
+    .content{
+        
+    background-color: $dark;
+    a{
+        background-color: $dark;
+    }
+    a:hover{
+        background-color: $orange;
+    }
+    }
+    
+}
+}
+
+
+.calendrier{
+    background-image: url("../../img/fluid.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    img{
+        width: 80%;
+        height: 80%;
+    }
+
+}
+
+.attaque{
+background-color: $semi-dark;
+background-image: url("../../img/arrondi2.png");
+background-position: center;
+background-repeat: no-repeat;
+
+img{
+    width: 80%;
+    height: 80%;
+}
+
+.console{
+    .content{
+        
+    background-color: $semi-dark;
+    a{
+        background-color: $semi-dark;
+    }
+    a:hover{
+        background-color: $orange;
+    }
+    }
+    
+}
+}
+
+.rpg{
+
+img{
+    width: 80%;
+    height: 80%;
+}
+}
+
+.poulin{
+    background-color: $dark;
+    img{
+        width: 80%;
+        height: 80%;
+    }
+    .console{
+        .content{
+            background-color: $dark;
+        }
+        a{
+            background-color: $dark;
+        }
+        a:hover{
+            background-color: $orange;
+        }
+    }
+}
+
+}
+}
+.console{
+    background-color: #D1D1D1;
+    width: 340px;
+    border: $whiteGrey 7px solid;
+    border-radius: 10px;
+    margin: 0;
+    height: 404px;
+    .content{
+        
+    background-color: $color-bg-primary;
+    position: relative;
+    bottom: -20px;
+    height: 95%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+    a{
+        color: $whiteGrey;
+        width: 200px;
+        border: solid 2px $orange;
+        background-color: $color-bg-primary;
+    }
+    a:hover{
+        background-color: $orange;
+    }
+    h4{
+        font-family: $electronize;
+        margin: 1%;
+    }
+    }
+    
+}
+
+@media screen and (min-width: $vw-large) {
+
+.projet{
+section{
+    .seperate{
+        border: #D1D1D1 7px solid;
+        height: 500px;
+        width: 0;
+
+    }
+    article{
+        flex-direction: row;
+    }
+    .chaos{
+
+
+        img{
+            width: 0;
+            height: 50%;
+            opacity: 0;
+            transition-delay: 500ms;
+            transition-duration: 1000ms;
+        }
+    }
+    .chaos:hover{
+        img{
+            opacity: 1;
+            width: 50%;
+        }
+        }
+    .calendrier{
+        img{
+            width: 0;
+            height: 50%;
+            opacity: 0;
+            transition-delay: 500ms;
+            transition-duration: 1000ms;
+        }
+    }
+    .calendrier:hover{
+        img{
+            width: 50%;
+            opacity: 1;
+        }
+    }
+    .attaque{
+        img{
+            width: 0;
+            height: 50%;
+            opacity: 0;
+            transition-delay: 500ms;
+            transition-duration: 1000ms;
+        }
+    }
+    .attaque:hover{
+        img{
+            width: 50%;
+            opacity: 1;
+        }
+    }
+    .rpg{
+        img{
+            width: 0;
+            height: 50%;
+            opacity: 0;
+            transition-delay: 500ms;
+            transition-duration: 1000ms;
+        }
+    }
+    .rpg:hover{
+        img{
+            width: 50%;
+            opacity: 1;
+        }
+    }
+    .poulin{
+        img{
+            width: 0;
+            height: 50%;
+            opacity: 0;
+            transition-delay: 500ms;
+            transition-duration: 1000ms;
+        }
+    }
+    .poulin:hover{
+        img{
+            width: 50%;
+            opacity: 1;
+        }
+    }
+}
+
+}
+
+
+}
+
+.single{
+    display: flex;
+    justify-content:center;
+    padding: 10%;
+    background-image: url("../../img/fond.png");
+    flex-direction: column;
+    img{
+        width: 100%;
+    }
+
+    h3{
+        font-family: $electronize;
+    }
+    a{
+        background-color: $whiteGrey;
+        padding: 4%;
+        text-decoration: none;
+        color: $black;
+        font-family: $electronize;
+    }
+    ul{
+        padding: 0;
+        list-style: none;
+        li{
+            font-family: $electronize;
+            padding: 0.5%;
+        }
+    }.boi{
+        font-family: $electronize;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        h5{
+            margin: 0;
+        }
+        img{
+            width: 20%;
+            height: 20%;
+            margin: 3%;
+        }
+        .rotate{
+            transform : rotate(180deg);
+        }
+
+        .seperate{
+            border: 1px $whiteGrey solid;
+            height: 70px;
+            margin: 15%;
+        }
+    }
+}   
+.video{
+        display: flex;
+        justify-content: center;
+        background-color: $grey3;
+        padding: 5%;
+        img{
+            width: 100%;
+            
+        }
+    }
+
+@media screen and (min-width: $vw-large) {
+.single{
+    padding: 100px;
+    padding-bottom: 440px;
+    flex-direction: row;
+    img{
+        width: 70%;
+    }
+    .side-text{
+        width: 40%;
+    }
+    a{
+        padding: 1%;
+    }
+    .boi{
+        img{
+            width: 10%;
+            height: 10%;
+            margin: 0.5%;
+        }
+    }
+}
+.video{
+    img{
+        width: 80%;
+    }
+}
+
+}

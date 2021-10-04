@@ -1,0 +1,26 @@
+//generic
+@import "generic/reset";
+
+//tools
+@import "tools/functions";
+
+// sttings
+@import 'settings/colors';
+@import "settings/font";
+@import "settings/dimension";
+@import "settings/global";
+
+//elements
+@import "element/body";
+@import "element/headings";
+
+//component
+@import "component/hero";
+@import "component/header";
+@import "component/projet_accueil";
+@import "component/footer";
+@import "component/profil";
+@import "component/force";
+@import "component/interet";
+@import "component/projet_page";
+@import "component/contact";

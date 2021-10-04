@@ -1,0 +1,101 @@
+.contact{
+    display: flex;
+
+    background-image: url("../../img/backgroundPolygon-side.png");
+    padding: 10%;
+    justify-content: space-between;
+    flex-direction: column;
+    img{
+        width: 100%;
+    }
+    .side-text{
+        width: 70%;
+        margin: 0;
+        div{
+            display: flex;
+            img{
+                width: 10%;
+            }
+        }
+    }
+    h5{
+        font-family: $electronize;
+    }
+    a{
+        color: $orange;
+        text-decoration: none;
+        padding: 2%;
+        border: $orange solid 2px;
+        margin-left: 15%;
+        transition-duration: 500ms;
+
+    }
+    a:hover{
+        background-color: $orange;
+        color: $semi-dark;
+    }
+}
+
+.formu{
+    padding: 10%;
+    background-color: $dark;
+    display: flex;
+    justify-content: center;
+    fieldset{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        border: none;
+        div{
+            display: flex;
+            
+        }
+        input{
+            padding: 1%;
+            margin: 2%;
+            width: 100%;
+        }
+        a{
+            text-decoration: none;
+            color: $white;
+            font-family: $electronize;
+            border: $orange solid 2px;
+            text-align: center;
+            width: 50%;
+            padding: 1%;
+            margin: 0 auto;
+            transition-duration: 500ms;
+        }
+        a:hover{
+            background-color: $orange;
+        }
+    }
+}
+
+@media screen and (min-width: $vw-large) {
+
+.contact{
+flex-direction: row;
+padding: 100px;
+
+.side-text{
+    width: 40%;
+    margin: 0;
+    div{
+        img{
+            width: 10%;
+        }
+    }
+}
+
+
+}
+
+.formu{
+fieldset{
+    width: 50%;
+}
+}
+
+}

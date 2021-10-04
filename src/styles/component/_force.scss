@@ -1,0 +1,36 @@
+.force{
+    background-color: $grey2;
+    section{
+        display: flex;
+        flex-wrap: wrap;
+        width: 70%;
+        margin: 0 auto;
+        padding: 10%;
+        img{
+            width: 50%;
+            height: 50%;
+        }
+        article{
+            font-weight: 200;
+        }
+    }
+}
+
+@media screen and (min-width: $vw-large) {
+.force{
+
+    section{
+        padding: 0%;
+        img{
+            width: 25%;
+            height: 25%;
+        }
+        article{
+            display: flex;
+            font-size: rem(48);
+        }
+    }
+
+}
+
+}
